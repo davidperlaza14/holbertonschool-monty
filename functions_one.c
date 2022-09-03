@@ -40,3 +40,17 @@ void _push(stack_t **stack, unsigned int line_number)
 		(*stack)->prev = new;
 	*stack = new;
 }
+
+void _pall(stack_t **stack, unsigned int n)
+{
+	stack_t *current = NULL;
+	(void)n;
+
+	current = *stack;
+
+	while (current != NULL)
+	{
+		dprintf(STDOUT_FILENO, "%d\n", current->n);
+		current = current->next;
+	}
+}
