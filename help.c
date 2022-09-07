@@ -39,3 +39,4 @@ void cleanStack(stack_t **stack)
 	fclose(global.fd);
 	free(global.line);
 }
+

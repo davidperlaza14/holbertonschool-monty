@@ -32,3 +32,4 @@ void ins_error(FILE *fd, char *line, stack_t *stack, char *count, int item)
 	free_dlistint(stack);
 	exit(EXIT_FAILURE);
 }
+
